@@ -14,5 +14,5 @@
   <li>VS Code</li>
 </ul><br>
 
-Visit website: <a href="swiggy-clone-website-zeta.vercel.app
+Visit website: <a href="https://swiggy-clone-website-zeta.vercel.app
 ">Swiggy-clone-website</a>
