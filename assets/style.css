@@ -148,3 +148,86 @@ header .nav {
     box-shadow: none;
     outline: none;
 }
+
+.card {
+    width: 16rem;
+    height: 5rem;
+    border: none;
+    outline: none; 
+}
+
+.img-container{
+    width: 15.7rem;
+    position: relative;
+}
+
+.gradient-color{
+    height: 61%;
+    width: 100%;
+    background-image: linear-gradient( 180deg, white 20%,  rgb(0, 0, 0) 100%, transparent), linear-gradient(to bottom, white 100%, rgb(0, 0, 0) 100%, transparent);
+    position: absolute;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+}
+
+.card img{
+    width: 15.7rem;
+    height: 8rem;
+    display: block;
+    position: relative;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.card h6 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 900;
+    position: absolute;
+    top: 6.5rem;
+    left: 0;
+    letter-spacing: 0%;
+    word-spacing: 0%;
+    padding: 0 0 2px 12px;
+    margin: 0;
+}
+
+.card h4 {
+    margin-top: 12px;
+    font-size: 17px;
+    font-weight: 600;
+    font-style: normal;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    margin-top: 12px;
+    padding: 0 16px;
+}
+
+.card .card-body {
+    padding: 0;;
+}
+
+.card h5 {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 0 0 2px;
+    margin: 8px 0 0 0;
+    
+}
+ .card .card-body svg{
+    margin-left: 16px;
+    margin-top: 6px;
+ }
+
+ .card p {
+    /* margin: 0; */
+    margin: 4px 28px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+    font-size: 12px;
+    /* margin: 4px 0 0 0; */
+ }
