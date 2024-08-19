@@ -13,4 +13,4 @@ const slideEvent = () => {
     });
 };
 
-slideEvent();
+slideEvent(this);

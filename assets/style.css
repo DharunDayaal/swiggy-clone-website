@@ -161,6 +161,40 @@ header .nav {
     position: relative;
 }
 
+.card-slider {
+    height: 50%;
+    border-bottom: 1px #eaeaea solid;
+}
+
+.card-slider .img-list .img-item:focus{
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.card-slider .img-list{
+    padding: 40px 0;
+    display: grid;
+    gap: 25px;
+    overflow-x: auto;
+    scrollbar-width: none; 
+    grid-template-columns: repeat(20, 1fr);
+}
+
+.card-slider .img-list::-webkit-scrollbar {
+    display: none;
+}
+
+.card-slider .img-list .img-item {
+    cursor: pointer;
+    width: 138px;
+    height: 138px;
+    object-fit: cover;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
 .gradient-color{
     height: 61%;
     width: 100%;
@@ -173,7 +207,7 @@ header .nav {
 }
 
 .card img{
-    width: 15.7rem;
+    width: 15.9rem;
     height: 8rem;
     display: block;
     position: relative;
