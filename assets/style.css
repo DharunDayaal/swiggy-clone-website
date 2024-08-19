@@ -174,7 +174,7 @@ header .nav {
 
 .card-slider .img-list{
     height: 35vh;
-    padding: 40px 0;
+    padding: 10px 0;
     display: grid;
     gap: 25px;
     overflow-x: auto;
