@@ -162,7 +162,7 @@ header .nav {
 }
 
 .card-slider {
-    height: 50%;
+    
     border-bottom: 1px #eaeaea solid;
 }
 
@@ -173,6 +173,7 @@ header .nav {
 }
 
 .card-slider .img-list{
+    height: 50%;
     padding: 40px 0;
     display: grid;
     gap: 25px;
