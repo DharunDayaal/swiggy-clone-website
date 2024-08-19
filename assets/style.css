@@ -116,10 +116,6 @@ header .nav {
     box-shadow: none;
 }
 
-.slider {
-    border-bottom: 1px #eaeaea solid;
-}
-
 .slider .img-list .img-item:focus{
     border: none;
     box-shadow: none;
@@ -149,11 +145,17 @@ header .nav {
     outline: none;
 }
 
+.slider .img-list .img-item:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.34);
+    transform: scale(1.01);
+    transition: box-shadow, transform 0.25s;
+}
+
 .card {
     width: 16rem;
     height: 5rem;
-    border: none;
     outline: none; 
+    border-radius: 12px;
 }
 
 .img-container{
@@ -161,9 +163,11 @@ header .nav {
     position: relative;
 }
 
-.card-slider {
-    
-    border-bottom: 1px #eaeaea solid;
+.bottom-line {
+    width: 100%;
+    border-bottom: 1px solid;
+    border-color: #eaeaea;
+    margin: 12px 0 12px 0;
 }
 
 .card-slider .img-list .img-item:focus{
@@ -196,15 +200,14 @@ header .nav {
     outline: none;
 }
 
-.gradient-color{
-    height: 61%;
-    width: 100%;
-    background-image: linear-gradient( 180deg, white 20%,  rgb(0, 0, 0) 100%, transparent), linear-gradient(to bottom, white 100%, rgb(0, 0, 0) 100%, transparent);
-    position: absolute;
-    opacity: 0.4;
-    top: 0;
-    left: 0;
-    border-radius: 12px;
+.card-slider .img-list::-webkit-scrollbar {
+    display: none;
+}
+
+.card-slider .img-list .card:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.34);
+    transform: scale(1.01);
+    transition: box-shadow, transform 0.25s;
 }
 
 .card img{
