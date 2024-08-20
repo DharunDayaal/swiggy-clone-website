@@ -111,14 +111,10 @@ header .nav {
 }
 
 .container1:focus{
-    border: none;
     outline: none;
-    box-shadow: none;
 }
 
 .slider .img-list .img-item:focus{
-    border: none;
-    box-shadow: none;
     outline: none;
 }
 
@@ -140,15 +136,7 @@ header .nav {
     width: 138px;
     height: 138px;
     object-fit: cover;
-    border: none;
-    box-shadow: none;
     outline: none;
-}
-
-.slider .img-list .img-item:hover {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.34);
-    transform: scale(1.01);
-    transition: box-shadow, transform 0.25s;
 }
 
 .card {
@@ -163,12 +151,6 @@ header .nav {
     position: relative;
 }
 
-.bottom-line {
-    width: 100%;
-    border-bottom: 1px solid;
-    border-color: #eaeaea;
-    margin: 12px 0 12px 0;
-}
 
 .card-slider .img-list .img-item:focus{
     border: none;
@@ -184,6 +166,7 @@ header .nav {
     overflow-x: auto;
     scrollbar-width: none; 
     grid-template-columns: repeat(20, 1fr);
+    scroll-snap-type: mandatory inline;
 }
 
 .card-slider .img-list::-webkit-scrollbar {
@@ -195,8 +178,6 @@ header .nav {
     width: 138px;
     height: 138px;
     object-fit: cover;
-    border: none;
-    box-shadow: none;
     outline: none;
 }
 
@@ -205,9 +186,9 @@ header .nav {
 }
 
 .card-slider .img-list .card:hover {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.34);
-    transform: scale(1.01);
-    transition: box-shadow, transform 0.25s;
+    cursor: pointer;
+    transform: scale(0.9);
+    transition: transform 0.25s;
 }
 
 .card img{
@@ -256,16 +237,45 @@ header .nav {
     margin: 8px 0 0 0;
     
 }
- .card .card-body svg{
+.card .card-body svg{
     margin-left: 16px;
     margin-top: 6px;
- }
+}
 
- .card p {
-    /* margin: 0; */
+.card p {
     margin: 4px 28px;
     font-family: 'Poppins', sans-serif;
     line-height: 1;
     font-size: 12px;
-    /* margin: 4px 0 0 0; */
- }
+}
+
+.bottom-line {
+    width: 100%;
+    border-bottom: 1px solid;
+    border-color: #eaeaea;
+    margin: 18px 0 12px 0;
+}
+
+.container1 .slider-scrollbar {
+    height: 16px;
+    width: 5%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    align-items: center; 
+}
+
+.slider-scrollbar .scrollbar-track {
+    height: 4px;
+    width: 100%;
+    background: #e8e8e8;
+    position: relative;
+    border-radius: 8px;
+}
+
+.slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    height: 3px;
+    width: 20%;
+    background: #ff0000;
+    border-radius: inherit;
+}

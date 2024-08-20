@@ -4,23 +4,36 @@ const slideEvent = () => {
     
     slideButtons.forEach(button => {
         button.addEventListener("click", () => {
-            const sliderContainer = button.closest(".container1");          //to find the closest container when there are more numbr of same containers
-            const slideImage = sliderContainer.querySelector(".img-list");  //it can be reused for many number of carousels
+            const sliderContainer = button.closest(".container1");  // Find the closest container
+            const slideImage = sliderContainer.querySelector(".img-list");  // Get the image list in the container
             const itemWidth = slideImage.querySelector(".img-item, .card").clientWidth;
+            const sliderScrollBar = sliderContainer.querySelector(".slider-scrollbar");
+            const sliderThumb = sliderScrollBar.querySelector(".scrollbar-thumb");
             const direction = button.id === "prev-slide" ? -1 : 1;
             const scrollAmount = itemWidth * itemsToMove * direction;
-            slideImage.scrollBy({left: scrollAmount, behavior: "smooth"});
+            const maxScrollLeft = slideImage.scrollWidth - slideImage.clientWidth;
 
-            if(direction == 1){
+            slideImage.scrollBy({ left: scrollAmount, behavior: "smooth" }); //scroll images with smooth transition
+
+            if (direction == 1) {
                 for (let i = 0; i < itemsToMove; i++) {
-                    slideImage.append(slideImage.children[0])  
+                    slideImage.append(slideImage.children[0]);
+                }
+            } else {
+                for (let i = 0; i < itemsToMove; i++) {
+                    slideImage.prepend(slideImage.children[slideImage.children.length - 1]);
                 }
             }
-            else {
-                for (let i = 0; i < array.length; i++) {
-                    slideImage.prepend(slideImage.children[slideImage.children.length - 1])
-                }
-            }
+
+            const updateScrollThumbPosition = () => {
+                const scrollPosition = slideImage.scrollLeft;
+                const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollBar.clientWidth - sliderThumb.clientWidth);
+                sliderThumb.style.transform = `translateX(${thumbPosition}px)`;
+            };
+
+            slideImage.addEventListener("scroll", () => {
+                updateScrollThumbPosition();  //update the scroll thumb when the next and previous button is clicked
+            });
         });
     });
 };
