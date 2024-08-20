@@ -275,7 +275,125 @@ header .nav {
 .slider-scrollbar .scrollbar-thumb {
     position: absolute;
     height: 3px;
-    width: 20%;
+    width: 14%;
     background: #ff0000;
     border-radius: inherit;
+}
+
+.container2 {
+    margin-bottom: 1.5rem;
+    padding: 0 12rem;
+}
+
+.container2 h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 800;   
+}
+
+.filter-options {
+    display: flex;
+}
+
+.filter-options div {
+    width: auto;
+    padding: 6px 12px;
+    border: 1px solid #d3d3d3;
+    border-radius: 15px;
+    margin: 1rem 8px 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.container2 .row:first-of-type {
+    gap:unset;
+}
+
+.container2 .row {
+    margin-top: 1rem;
+    gap: 34px;
+}
+
+.container2 .card {
+    width: 256px;
+    padding: 0;
+    border-radius: 18px;
+}
+
+.container2 .card{
+    width: 256px;
+    padding: 0;
+}
+
+.container2 .card div{
+    width: auto;
+}
+
+.container2 .bottom-line {
+    margin: 2rem 0 1.5rem 0;
+}
+
+.container3 {
+    margin-bottom: 1.5rem;
+    padding: 0 8rem;
+}
+
+.container3 h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 700; 
+}
+
+.container3 .other-restaurants {
+    margin: 1.5rem 0 0 0;
+    gap: 24px;
+}
+
+.container3 .other-restaurants div{
+    width: 18rem;
+    padding: 12px 12px;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: unset;
+    color: #000;
+    font-weight: 600;
+}
+
+.container3 .other-restaurants div:last-child{
+    font-weight: 800;
+}
+
+.container4 {
+    margin-bottom: 1.5rem;
+    padding: 0 8rem;
+}
+
+.container4 h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: 700; 
+}
+
+.container4 .row {
+    margin: 1.5rem 0 0 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container4 .col-lg-6 {
+    width: 37rem;
+    padding: 12px 12px;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-style: unset;
+    color: #000;
+    font-weight: 600;
 }
