@@ -9,7 +9,7 @@ header {
     padding: 14px 8.53vw;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 9999;
     border: 1px solid white;
     box-shadow: 0px 7px 5px rgba(240, 232, 232, 0.6);
     font-family: 'Poppins', sans-serif;
@@ -317,6 +317,7 @@ header .nav {
 .container2 .row {
     margin-top: 1rem;
     gap: 34px;
+    row-gap: 24px;
 }
 
 .container2 .card {
