@@ -327,11 +327,6 @@ header .nav {
     border-radius: 18px;
 }
 
-.container2 .card{
-    width: 256px;
-    padding: 0;
-}
-
 .container2 .card div{
     width: auto;
 }
