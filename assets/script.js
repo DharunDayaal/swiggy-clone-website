@@ -1,3 +1,23 @@
+const imageItems = [];
+
+// const image = new Image();
+for(let i=1; i<15; i++){
+    const image = document.createElement('img')
+    image.classList.add("img-item");
+    image.setAttribute('tabindex', '-1')
+    image.src = `./assets/images/${i}.avif`
+    imageItems.push(image);
+    console.log(imageItems[i]);
+}
+
+
+const imageList = document.querySelector(".img-list");
+
+imageItems.forEach(img => {
+    imageList.append(img)
+})
+
+
 const slideEvent = () => {
     const slideButtons = document.querySelectorAll(".slide-btn");
     const itemsToMove = 3;

@@ -134,10 +134,15 @@ header .nav {
     display: none;
 }
 
-.slider .img-list .img-item {
+.slider .img-list .img-item{
     cursor: pointer;
     width: 138px;
     height: 138px;
+    display: grid;
+    gap: 25px;
+    overflow-x: auto;
+    scrollbar-width: none; 
+    grid-template-columns: repeat(20, 1fr);
     object-fit: cover;
     outline: none;
 }
