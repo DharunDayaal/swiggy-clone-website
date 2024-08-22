@@ -13,7 +13,6 @@ imageItems.forEach(img => {
     imageList.append(img);
 });
 const initializeCarousel = (carouselContainer) => {
-    const imageList = carouselContainer.querySelector(".img-list");
     const sliderScrollBar = carouselContainer.querySelector(".slider-scrollbar");
     const sliderThumb = sliderScrollBar ? sliderScrollBar.querySelector(".scrollbar-thumb") : null;
 

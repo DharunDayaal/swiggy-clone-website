@@ -431,5 +431,39 @@ header .nav {
 
 .container5 a img {
     width: 14em;
-    
+}
+
+.container6 {
+    background: #000;
+    width: 100%;
+    height: 60vh;
+    padding: 2% 18% 8% 18%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5%;
+}
+
+.address-container .address-icon {
+    width: 100%;
+    display: inline-flex;
+    height: fit-content;
+}
+
+.address-container .address-icon img{
+    width: 16%;
+}
+
+.address-container .address-icon h5 {
+    width:fit-content;
+    margin: 4px 0 0 8px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #F0F0F5;
+}
+
+.address-container div {
+    margin-top: 6px;
+    color: #F0F0F5;
 }
