@@ -4,14 +4,17 @@ for (let i = 1; i < 15; i++) {
     const image = document.createElement('img');
     image.classList.add("img-item");
     image.setAttribute('tabindex', '-1');
+    image.setAttribute('alt', `${i}-food-image`)
     image.src = `./assets/images/${i}.avif`;
     imageItems.push(image);
 }
+console.log(imageItems)
 
 const imageList = document.querySelector(".container1 .img-list");
 imageItems.forEach(img => {
     imageList.append(img);
 });
+
 const initializeCarousel = (carouselContainer) => {
     const sliderScrollBar = carouselContainer.querySelector(".slider-scrollbar");
     const sliderThumb = sliderScrollBar ? sliderScrollBar.querySelector(".scrollbar-thumb") : null;

@@ -436,7 +436,7 @@ header .nav {
 .container6 {
     background: #000;
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     padding: 2% 18% 8% 18%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -466,4 +466,67 @@ header .nav {
 .address-container div {
     margin-top: 6px;
     color: #F0F0F5;
+}
+
+.swiggy-pages ul,
+.contact-section ul,
+.legal-section ul,
+.cities-section ul {
+    list-style: none;
+}
+
+.swiggy-pages .footer-heading,
+.contact-section .footer-heading,
+.legal-section .footer-heading,
+.cities-section .footer-heading {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: 8px;
+    font-style: normal;
+    color: #F0F0F5;
+}
+
+.swiggy-pages .footer-body,
+.contact-section .footer-body,
+.legal-section .footer-body,
+.cities-section .footer-body {
+    padding: 8px 0 8px 0;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.swiggy-pages .footer-body a,
+.contact-section .footer-body a,
+.legal-section .footer-body a,
+.cities-section .footer-body a {
+    color: #9f9e9e;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14.4px;
+    text-decoration: none;
+}
+
+.swiggy-pages .footer-body a:active,
+.contact-section .footer-body a:active,
+.legal-section .footer-body a:active,
+.cities-section .footer-body a:active {
+    color: #9f9e9e;
+    text-decoration: none;
+}
+
+.legal-section {
+    margin-top: 40px;
+}
+
+.cities-section .footer-button {
+    border: 1px solid rgba(237, 235, 235, 0.2);
+    color: #9f9e9e;
+    text-align: start;
+    padding: 4px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    width: 88px;
+    height: 28px;
+    border-radius: 6px;
+    background-color: transparent;
 }
