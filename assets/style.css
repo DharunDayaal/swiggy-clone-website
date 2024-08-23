@@ -86,7 +86,7 @@ header .nav {
 .container1 {
     margin-top: 100px;
     width: 100%;
-    padding: 0 12rem;
+    padding: 0 9rem;
     box-shadow: none;
     outline: none;
 }
@@ -290,7 +290,7 @@ header .nav {
 
 .container2 {
     margin-bottom: 1.5rem;
-    padding: 0 12rem;
+    padding: 0 9rem;
 }
 
 .container2 h3{
@@ -326,7 +326,7 @@ header .nav {
 }
 
 .container2 .card {
-    margin-top: 8rem;
+    /* margin-top: 8rem; */
     width: 256px;
     padding: 0;
     border-radius: 18px;
@@ -337,7 +337,16 @@ header .nav {
 }
 
 .container2 .bottom-line {
-    margin: 8.7rem 0 1.5rem 0;
+    margin: 6rem 0 2rem 0;
+}
+
+.container2 .col-lg-3 .col-md-6 {
+    width: 265px;
+    padding: 0;
+}
+
+.container2 .col-md-6 {
+    width: 265px;
 }
 
 .container3 {
@@ -357,6 +366,7 @@ header .nav {
 }
 
 .container3 .other-restaurants div{
+    cursor: pointer;
     width: 18rem;
     padding: 12px 12px;
     text-align: center;
@@ -530,3 +540,84 @@ header .nav {
     border-radius: 6px;
     background-color: transparent;
 }
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    header {
+        width: 100%;
+    }
+    .container1, .container2, .container3 {
+        width: 100%;
+        padding: 8px;
+    }
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767.98px) { 
+    
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) { 
+    body {
+        align-items: center;
+    }
+    header {
+        width: 100%;
+        padding: 0;
+    }
+    .nav {
+        width: 100%;
+    }
+    .container1, .container2, .container3, .container4{
+        padding: 0;
+    }
+    .container2, .container3, .container4, .container5, .container6 {
+        align-items: center;
+        width: 90%;
+        gap: 12px;
+    }
+    .container1{
+        width: 90%;
+        overflow: hidden;
+    }
+    .container2 .row {
+        width: 90%;
+    }
+    .filter-options {
+        width: fit-content;
+    }
+    .filter-options div {
+        padding: 3px 8px;
+        margin: 8px 4px;
+    }
+    .container3 h3, .container4 h3 {
+        width: fit-content;
+    }
+    .container4 div {
+        padding: 8px;
+        margin-bottom: 18px;
+    }
+    .container5 {
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .container5 div {
+        width: 31%;
+        padding: 0px;
+    }
+    .container5 div h5 {
+        font-size: 18px;
+        padding: 0;
+    }
+    .container5 a{
+        width: 30%;
+    }
+    .container5 a img {
+        width: 100%;
+    }
+  }
+  
+  
